@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Two way data binding</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body ng-app ng-init="x=true">
+  <input type="checkbox" ng-model="x">
+  <br>
+  <img src="client/resources/images/img1.jpg" width="200" ng-show="x">
+  <img src="client/resources/images/img1.jpg" width="400" ng-hide="x">
+  <br><br>
+<div>
+<p>Enter a number here:
+<input type="text" ng-model="z">
+</p>
+<p>The entered number is:<input type="text" ng-model="z"></p>
+</div>
+<div>
+<script src="client/resources/lib/angular.min.js"></script>
+</div>
+</body>
+</html>
